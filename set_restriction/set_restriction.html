@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Editor</title>
+  <link rel="stylesheet" href="restriction_styles.css?v=3" />
+</head>
+
+<body>
+  <button type="button" onclick="updateRestrictions()">
+    Update Restrictions
+  </button>
+
+  <div class="row">
+    <div class="column">
+      <h4>Features to restrict:</h4>
+
+      <label class="container">If statements
+        <input type="checkbox" class="feature" value="if">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="container">For loops
+        <input type="checkbox" class="feature" value="for">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="container">While loops
+        <input type="checkbox" class="feature" value="while">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="container">Recursion
+        <input type="checkbox" class="feature" value="recursion">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+
+    <div class="column">
+      <h4>Locked features:</h4>
+    </div>
+
+    <div class="column">
+      <h4>Built-ins:</h4>
+      <div class="subcolumn">
+        <label class="container">abs
+          <input type="checkbox" class="feature" value="abs">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">all
+            <input type="checkbox" class="feature" value="all">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">any
+            <input type="checkbox" class="feature" value="any">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">bin
+            <input type="checkbox" class="feature" value="bin">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">divmod
+            <input type="checkbox" class="feature" value="divmod">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">filter
+            <input type="checkbox" class="feature" value="filter">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">hex
+            <input type="checkbox" class="feature" value="hex">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">len
+            <input type="checkbox" class="feature" value="len">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">map
+            <input type="checkbox" class="feature" value="map">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">max
+            <input type="checkbox" class="feature" value="max">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="subcolumn">
+        <h4>1</h4>
+      </div>
+
+      <div class="subcolumn">
+        <label class="container">min
+            <input type="checkbox" class="feature" value="min">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">oct
+            <input type="checkbox" class="feature" value="oct">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">pow
+            <input type="checkbox" class="feature" value="pow">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">reversed
+            <input type="checkbox" class="feature" value="reversed">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">round
+            <input type="checkbox" class="feature" value="round">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">slice
+            <input type="checkbox" class="feature" value="slice">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">sorted
+            <input type="checkbox" class="feature" value="sorted">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">sum
+            <input type="checkbox" class="feature" value="sum">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">zip
+            <input type="checkbox" class="feature" value="zip">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="subcolumn">
+        <h4>1</h4>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
