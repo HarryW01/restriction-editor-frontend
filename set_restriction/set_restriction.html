@@ -15,142 +15,315 @@
   <div class="row">
     <div class="column">
       <h4>Features to restrict:</h4>
+      <p>
+        Locked features are shown in red- they cannot be used. Any unlocked features can be restricted
+        by checking the box next to them. See the Challenges button to unlock more features.
+      </p>
 
-      <label class="container">If statements
-        <input type="checkbox" class="feature" value="if">
-        <span class="checkmark"></span>
-      </label>
-
-      <label class="container">For loops
-        <input type="checkbox" class="feature" value="for">
-        <span class="checkmark"></span>
-      </label>
-
-      <label class="container">While loops
-        <input type="checkbox" class="feature" value="while">
-        <span class="checkmark"></span>
-      </label>
-
-      <label class="container">Recursion
-        <input type="checkbox" class="feature" value="recursion">
-        <span class="checkmark"></span>
-      </label>
-    </div>
-
-    <div class="column">
-      <h4>Locked features:</h4>
-    </div>
-
-    <div class="column">
-      <h4>Built-ins:</h4>
       <div class="subcolumn">
-        <label class="container">abs
-          <input type="checkbox" class="feature" value="abs">
+        <label class="container">If statements
+          <input type="checkbox" class="feature" value="if">
           <span class="checkmark"></span>
         </label>
 
-        <label class="container">all
-            <input type="checkbox" class="feature" value="all">
-            <span class="checkmark"></span>
+        <label class="container">For loops
+          <input type="checkbox" class="feature" value="for">
+          <span class="checkmark"></span>
         </label>
 
-        <label class="container">any
-            <input type="checkbox" class="feature" value="any">
-            <span class="checkmark"></span>
+        <label class="container">While loops
+          <input type="checkbox" class="feature" value="while">
+          <span class="checkmark"></span>
         </label>
 
-        <label class="container">bin
-            <input type="checkbox" class="feature" value="bin">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container">divmod
-            <input type="checkbox" class="feature" value="divmod">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container">filter
-            <input type="checkbox" class="feature" value="filter">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container">hex
-            <input type="checkbox" class="feature" value="hex">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container">len
-            <input type="checkbox" class="feature" value="len">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container">map
-            <input type="checkbox" class="feature" value="map">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container">max
-            <input type="checkbox" class="feature" value="max">
-            <span class="checkmark"></span>
+        <label class="container">Recursion
+          <input type="checkbox" class="feature" value="recursion">
+          <span class="checkmark"></span>
         </label>
       </div>
 
       <div class="subcolumn">
-        <h4>1</h4>
+        <label class="container">List comprehensions
+          <input type="checkbox" class="feature" value="comprehension">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">List comprehensions
+          <input type="checkbox" class="feature" value="comprehension">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">List comprehensions
+          <input type="checkbox" class="feature" value="comprehension">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">List comprehensions
+          <input type="checkbox" class="feature" value="comprehension">
+          <span class="checkmark"></span>
+        </label>
+
       </div>
 
       <div class="subcolumn">
-        <label class="container">min
-            <input type="checkbox" class="feature" value="min">
-            <span class="checkmark"></span>
+        <label class="container">List comprehensions
+          <input type="checkbox" class="feature" value="comprehension">
+          <span class="checkmark"></span>
         </label>
 
-        <label class="container">oct
-            <input type="checkbox" class="feature" value="oct">
-            <span class="checkmark"></span>
+        <label class="container">List comprehensions
+          <input type="checkbox" class="feature" value="comprehension">
+          <span class="checkmark"></span>
         </label>
 
-        <label class="container">pow
-            <input type="checkbox" class="feature" value="pow">
-            <span class="checkmark"></span>
+        <label class="container">List comprehensions
+          <input type="checkbox" class="feature" value="comprehension">
+          <span class="checkmark"></span>
         </label>
 
-        <label class="container">reversed
-            <input type="checkbox" class="feature" value="reversed">
-            <span class="checkmark"></span>
+        <label class="container">List comprehensions
+          <input type="checkbox" class="feature" value="comprehension">
+          <span class="checkmark"></span>
         </label>
+      </div>
 
-        <label class="container">round
-            <input type="checkbox" class="feature" value="round">
-            <span class="checkmark"></span>
-        </label>
+      <h4>Built-ins to restrict:</h4>
+      <p>
+        Locked built-in functions are shown in red- they cannot be used.
+        Any unlocked built-ins can be restricted by checking the box next to them.
+        To unlock a built-in, click the Implement button next to it and write
+        a working implementation in the code editor on the right.
+      </p>
 
-        <label class="container">slice
-            <input type="checkbox" class="feature" value="slice">
+      <div class="subcolumn">
+        <div class="row">
+          <label class="container">abs
+            <input type="checkbox" class="feature" value="abs">
             <span class="checkmark"></span>
-        </label>
+          </label>
 
-        <label class="container">sorted
-            <input type="checkbox" class="feature" value="sorted">
-            <span class="checkmark"></span>
-        </label>
+          <button class="built-in" onclick="loadEditor('abs','num: int', 'Returns the absolute value of a number')" value="abs">
+            Implement
+          </button>
+        </div>
+        
+        <div class="row">
+          <label class="container">all
+              <input type="checkbox" class="feature" value="all">
+              <span class="checkmark"></span>
+          </label>
 
-        <label class="container">sum
-            <input type="checkbox" class="feature" value="sum">
-            <span class="checkmark"></span>
-        </label>
+          <button class="built-in" onclick="loadEditor('all','iterable: Iterable','Returns True if all items in an iterable are true')" value="all">
+            Implement
+          </button>
+        </div>
 
-        <label class="container">zip
-            <input type="checkbox" class="feature" value="zip">
-            <span class="checkmark"></span>
-        </label>
+        <div class="row">
+          <label class="container">any
+              <input type="checkbox" class="feature" value="any">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('any','iterable: Iterable','Returns True if any item in an iterable is true')" value="any">
+            Implement
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="container">bin
+              <input type="checkbox" class="feature" value="bin">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('bin','x: int','Returns the binary version of a number')" value="bin">
+            Implement
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="container">divmod
+              <input type="checkbox" class="feature" value="divmod">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('divmod','a: int | float, b: int | float','Returns the quotient and remainder of two numbers')" value="divmod">
+            Implement
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="container">filter
+              <input type="checkbox" class="feature" value="filter">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('filter','function: Callable, iterable: Iterable','Returns an iterator with items filtered by a function')" value="filter">
+            Implement
+          </button>
+        </div>
       </div>
 
       <div class="subcolumn">
-        <h4>1</h4>
+        <div class="row">
+          <label class="container">hex
+              <input type="checkbox" class="feature" value="hex">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('hex','x: int','Returns the hexadecimal version of a number')" value="hex">
+            Implement
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="container">len
+              <input type="checkbox" class="feature" value="len">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('len','object: Sized','Returns the number of items in an object')" value="len">
+            Implement
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="container">map
+              <input type="checkbox" class="feature" value="map">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('map','function: Callable, iterable: Iterable','Returns an iterator applying a function to each item')" value="map">
+            Implement
+          </button>
+        </div>
+        
+        <div class="row">
+          <label class="container">max
+              <input type="checkbox" class="feature" value="max">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('max','values: Iterable','Returns the largest item')" value="max">
+            Implement
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="container">min
+              <input type="checkbox" class="feature" value="min">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('min','values: Iterable','Returns the smallest item')" value="min">
+            Implement
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="container">oct
+              <input type="checkbox" class="feature" value="oct">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('oct','x: int','Returns the octal version of a number')" value="oct">
+            Implement
+          </button>
+        </div>
       </div>
+
+      <div class="subcolumn">
+        <div class="row">
+          <label class="container">pow
+              <input type="checkbox" class="feature" value="pow">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('pow','x: int | float, y: int | float','Returns x to the power of y')" value="pow">
+            Implement
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="container">reversed
+              <input type="checkbox" class="feature" value="reversed">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('reversed','sequence: Sequence','Returns a reversed iterator')" value="reversed">
+            Implement
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="container">round
+              <input type="checkbox" class="feature" value="round">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('round','number: int | float, ndigits: int | None = None','Rounds a number (optional digits)')" value="round">
+            Implement
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="container">slice
+              <input type="checkbox" class="feature" value="slice">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('slice','start: int | None, stop: int | None, step: int | None = None','Returns a slice object')" value="slice">
+            Implement
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="container">sorted
+              <input type="checkbox" class="feature" value="sorted">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('sorted','iterable: Iterable','Returns a sorted list')" value="sorted">
+            Implement
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="container">sum
+              <input type="checkbox" class="feature" value="sum">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('sum','iterable: Iterable, start: int | float = 0','Returns the sum of all items')" value="sum">
+            Implement
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="container">zip
+              <input type="checkbox" class="feature" value="zip">
+              <span class="checkmark"></span>
+          </label>
+
+          <button class="built-in" onclick="loadEditor('zip','*iterables: Iterable','Returns an iterator that aggregates elements')" value="zip">
+            Implement
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <h4>Write Built-ins:</h4>
+      <p>
+        To be able to use built-in functions, you will need to implement them yourself 
+        first. Click on the "write" button next to the function you want to implement,
+        write your version below and press the run button to test it. If your function
+        passes all the tests, you are free to use it in your code!
+      </p>
+      <iframe
+        id="code-editor"
+      ></iframe>
     </div>
   </div>
 </body>
-<script src="script.js"></script>
+<script src="restriction_script.js"></script>
 </html>
